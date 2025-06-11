@@ -1,0 +1,14 @@
+CRITICAL - 2023-05-18 12:18:37 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Upload.php on line 30.
+ 1 APPPATH/Controllers/Upload.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Upload->upload_file()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-18 12:38:52 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Upload.php on line 37.
+ 1 APPPATH/Controllers/Upload.php(37): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Upload->upload_file()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

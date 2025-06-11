@@ -1,0 +1,167 @@
+CRITICAL - 2023-05-16 03:33:07 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH/Controllers/Upload.php(16): CodeIgniter\HTTP\Files\UploadedFile->move()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Upload->upload_file()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-16 04:26:46 --> Call to a member function isValid() on array
+in APPPATH/Controllers/Upload.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Upload->upload_file()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-16 05:30:47 --> Undefined variable $totalVideos
+in APPPATH/Views/video.php on line 30.
+ 1 APPPATH/Views/video.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/video.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Video.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Video->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-16 05:30:50 --> Undefined variable $totalVideos
+in APPPATH/Views/video.php on line 30.
+ 1 APPPATH/Views/video.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/video.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Video.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Video->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-16 07:16:03 --> Call to a member function submitComment() on null
+in APPPATH/Controllers/Video.php on line 58.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Video->submit_comment()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-16 07:16:13 --> Call to a member function submitComment() on null
+in APPPATH/Controllers/Video.php on line 58.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Video->submit_comment()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-16 07:20:20 --> Call to a member function submitComment() on null
+in APPPATH/Controllers/Video.php on line 58.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Video->submit_comment()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-16 07:25:46 --> Call to a member function submitComment() on null
+in APPPATH/Controllers/Video.php on line 57.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Video->submit_comment()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-16 07:28:46 --> Undefined variable $videoId
+in APPPATH/Controllers/Video.php on line 62.
+ 1 APPPATH/Controllers/Video.php(62): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Video->submit_comment()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-16 12:08:47 --> mysqli_sql_exception: Duplicate entry '0' for key 'Uploads.user_id' in /var/www/htdocs/demo/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/demo/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/demo/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/demo/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/demo/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/demo/app/Models/Upload_model.php(17): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/demo/app/Controllers/Upload.php(25): App\Models\Upload_model->upload()
+#6 /var/www/htdocs/demo/system/CodeIgniter.php(934): App\Controllers\Upload->upload_file()
+#7 /var/www/htdocs/demo/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/demo/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/demo/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-16 12:08:47 --> Duplicate entry '0' for key 'Uploads.user_id'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Upload_model.php(17): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Upload.php(25): App\Models\Upload_model->upload()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Upload->upload_file()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-16 12:32:40 --> finfo_file(/tmp/phpPIi8S0): Failed to open stream: No such file or directory
+in SYSTEMPATH/Files/File.php on line 115.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Files/File.php(115): finfo_file()
+ 3 APPPATH/Controllers/Upload.php(26): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Upload->upload_file()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-16 12:36:00 --> Call to a member function withFile() on bool
+in APPPATH/Controllers/Upload.php on line 60.
+ 1 APPPATH/Controllers/Upload.php(28): App\Controllers\Upload->processImage()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Upload->upload_file()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-16 12:38:20 --> Call to a member function save() on null
+in APPPATH/Controllers/Upload.php on line 64.
+ 1 APPPATH/Controllers/Upload.php(28): App\Controllers\Upload->processImage()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Upload->upload_file()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-16 12:50:39 --> Call to a member function save() on null
+in APPPATH/Controllers/Upload.php on line 60.
+ 1 APPPATH/Controllers/Upload.php(27): App\Controllers\Upload->process_image()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Upload->upload_file()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-16 13:03:12 --> Call to a member function save() on null
+in APPPATH/Controllers/Upload.php on line 60.
+ 1 APPPATH/Controllers/Upload.php(27): App\Controllers\Upload->process_image()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Upload->upload_file()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-16 13:04:53 --> Call to a member function save() on null
+in APPPATH/Controllers/Upload.php on line 60.
+ 1 APPPATH/Controllers/Upload.php(27): App\Controllers\Upload->process_image()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Upload->upload_file()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-16 13:12:08 --> finfo_file(/tmp/phpUvXJe8): Failed to open stream: No such file or directory
+in SYSTEMPATH/Files/File.php on line 115.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Files/File.php(115): finfo_file()
+ 3 SYSTEMPATH/HTTP/Files/UploadedFile.php(302): CodeIgniter\Files\File->getMimeType()
+ 4 APPPATH/Controllers/Upload.php(62): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 APPPATH/Controllers/Upload.php(27): App\Controllers\Upload->process_image()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Upload->upload_file()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-16 14:01:44 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 882.
+ 1 SYSTEMPATH/Model.php(642): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH/Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Upload.php(11): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Upload->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-16 14:03:52 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::upload_table()
+in APPPATH/Models/Upload_model.php on line 29.
+ 1 APPPATH/Controllers/Upload.php(11): App\Models\Upload_model->getAllFiles()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Upload->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-16 15:22:25 --> Undefined variable $email
+in APPPATH/Controllers/Upload.php on line 43.
+ 1 APPPATH/Controllers/Upload.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Upload->upload_file()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

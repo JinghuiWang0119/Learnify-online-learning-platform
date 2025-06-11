@@ -1,0 +1,78 @@
+ERROR - 2023-05-15 13:53:24 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-05-15 13:53:24 --> 
+ERROR - 2023-05-15 14:00:12 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to smtp.gmail.com:587 (Connection timed out) in /var/www/htdocs/demo/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/demo/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/demo/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/demo/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/demo/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/demo/app/Controllers/Login.php(131): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/demo/app/Controllers/Login.php(109): App\Controllers\Login->sendVerificationEmail()
+#7 /var/www/htdocs/demo/system/CodeIgniter.php(934): App\Controllers\Login->register()
+#8 /var/www/htdocs/demo/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/demo/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/demo/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-05-15 14:00:12 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-05-15 14:00:12 --> 
+ERROR - 2023-05-15 14:04:08 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to smtp.gmail.com:587 (Connection timed out) in /var/www/htdocs/demo/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/demo/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/demo/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/demo/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/demo/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/demo/app/Controllers/Login.php(131): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/demo/app/Controllers/Login.php(109): App\Controllers\Login->sendVerificationEmail()
+#7 /var/www/htdocs/demo/system/CodeIgniter.php(934): App\Controllers\Login->register()
+#8 /var/www/htdocs/demo/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/demo/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/demo/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-05-15 14:04:08 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-05-15 14:04:08 --> 
+ERROR - 2023-05-15 14:12:21 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to smtp.gmail.com:587 (Connection timed out) in /var/www/htdocs/demo/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/htdocs/demo/system/Email/Email.php(1863): fsockopen()
+#2 /var/www/htdocs/demo/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/htdocs/demo/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/htdocs/demo/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/htdocs/demo/app/Controllers/Login.php(136): CodeIgniter\Email\Email->send()
+#6 /var/www/htdocs/demo/app/Controllers/Login.php(109): App\Controllers\Login->sendVerificationEmail()
+#7 /var/www/htdocs/demo/system/CodeIgniter.php(934): App\Controllers\Login->register()
+#8 /var/www/htdocs/demo/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/htdocs/demo/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/htdocs/demo/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-05-15 14:12:21 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-05-15 14:12:21 --> 
+ERROR - 2023-05-15 14:12:21 --> Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Mon, 15 May 2023 14:12:16 +0000
+To: 2682310694@qq.com
+From: &quot;Jinghui Wang&quot; &lt;jinghui.wang1@uqconnect.edu.au&gt;
+Return-Path: &lt;jinghui.wang1@uqconnect.edu.au&gt;
+Subject: =?UTF-8?Q?Email=20Verification?=
+Reply-To: &lt;jinghui.wang1@uqconnect.edu.au&gt;
+User-Agent: CodeIgniter
+X-Sender: jinghui.wang1@uqconnect.edu.au
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;64623dc0254ac3.20006054@uqconnect.edu.au&gt;
+Mime-Version: 1.0
+
+</pre>
+CRITICAL - 2023-05-15 14:41:00 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::first()
+in APPPATH/Models/User_model.php on line 65.
+ 1 APPPATH/Controllers/Login.php(174): App\Models\User_model->verifyEmail()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->verify_email()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-15 14:42:38 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::first()
+in APPPATH/Models/User_model.php on line 65.
+ 1 APPPATH/Controllers/Login.php(174): App\Models\User_model->verifyEmail()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->verify_email()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
